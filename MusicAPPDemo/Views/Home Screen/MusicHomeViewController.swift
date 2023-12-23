@@ -17,6 +17,7 @@ class MusicHomeViewController: UIViewController {
     
     //MARK: - OutSide Variables
     let objMusicViewModel = MusicHomeViewModel()
+    var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

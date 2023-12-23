@@ -29,6 +29,11 @@ class MusicHomeViewModel: NSObject{
             refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
             objVC.tblMusicList.addSubview(refreshControl)
         }
+        
+        objVC.activityIndicator = UIActivityIndicatorView(style: .large)
+        objVC.activityIndicator.center = objVC.view.center
+        objVC.view.addSubview(objVC.activityIndicator)
+        
         objVC.topHeaderLbl.font = Constants.Fonts.headerLabelFont
         objVC.topHeaderView.backgroundColor = UIColor.pineGreen
         
@@ -55,6 +60,7 @@ class MusicHomeViewModel: NSObject{
         let decoder = JSONDecoder()
         let request = URLRequest(url: url)
         
+        objVC.activityIndicator.startAnimating()
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if error != nil{
                 print(error?.localizedDescription as Any)
@@ -82,6 +88,11 @@ class MusicHomeViewModel: NSObject{
                     }
                 }
             }
+            DispatchQueue.main.async {
+                objVC.activityIndicator.stopAnimating()
+                objVC.activityIndicator.hidesWhenStopped
+            }
+            
         }.resume()
     }
     
