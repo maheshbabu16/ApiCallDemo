@@ -1,4 +1,4 @@
-# ApiCallDemo
+# ApiCallDemo(Swift)
 
 ## Getting started
 
@@ -9,11 +9,11 @@ To make it easy for you to get started with this project guidlines, here's a lis
 
 This project consistes of 3 screens : One Launch Screen, two main views.
 
-# Step 1 :- As soon as you run app you may see home screen with welcome text on top left. 
+## Step 1 :- As soon as you run app you may see home screen with welcome text on top left. 
 
-# Step 2 :- Data displayed inside app is completely based on API calling as per URL.
+## Step 2 :- Data displayed inside app is completely based on API calling as per URL.
 
-# Step 3 :- On home screen you may find "show more" button for each row. This button helps you to navigate to next screenwhich displays detail data for selected row.
+## Step 3 :- On home screen you may find "show more" button for each row. This button helps you to navigate to next screenwhich displays detail data for selected row.
 
 
 # Addition Information: -
@@ -22,9 +22,13 @@ This project consistes of 3 screens : One Launch Screen, two main views.
 - This file contains all constant values that are used in this project.
 
 ## All Home screen view controllers are been saved into folder named "Views".
+
 ## Data from Api has been managed with model class file named "MusicDataModel", you can access this file from ModelClass folder.
+
 ## Used storyboard and UI-Kit for designing this application.
-## ViewController of home screen is named as "MusicHomeViewController"
-## ViewController of second screen is named as "MusicDetailViewController"
+
+## ViewController of home screen is named as "MusicHomeViewController".
+
+## ViewController of second screen is named as "MusicDetailViewController".
 
 
