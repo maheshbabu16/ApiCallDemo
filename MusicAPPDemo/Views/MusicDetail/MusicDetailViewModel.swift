@@ -18,7 +18,8 @@ class MusicDetailViewModel: NSObject{
     
     func setUpUI(){
         objDetailVC?.topheaderView.backgroundColor = UIColor.pineGreen
-        
+        objDetailVC?.btnBack.backgroundColor = UIColor.textColor?.withAlphaComponent(0.15)
+        objDetailVC?.btnBack.layer.cornerRadius = (objDetailVC?.btnBack.frame.height ?? 40)/2
         self.arrData = objDetailVC?.arrDetailData
         self.objDetailVC?.lblTitle.text = objDetailVC?.titleTxt
         self.objDetailVC?.collectionList.dataSource = self

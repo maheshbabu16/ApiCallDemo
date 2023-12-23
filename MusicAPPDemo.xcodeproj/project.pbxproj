@@ -75,13 +75,13 @@
 			isa = PBXGroup;
 			children = (
 				FEEDDA982B3675780096896E /* APP + Scene Delegates */,
+				FEEDDA992B36758B0096896E /* Style */,
+				FEEDDA952B36750A0096896E /* Constants + UIColor */,
 				FEEDDA972B3675670096896E /* StoryBoards */,
 				FE9ACB702B35C2E500CE23C5 /* ModelClasses */,
-				FEEDDA952B36750A0096896E /* Constants + UIColor */,
 				FEEDDA962B3675300096896E /* Views */,
 				FE9ACB692B3593D400CE23C5 /* TableCells */,
 				FE9ACB6D2B35B93300CE23C5 /* CollectionViewCells */,
-				FEEDDA992B36758B0096896E /* Style */,
 				FE9ACB502B3585FD00CE23C5 /* Info.plist */,
 			);
 			path = MusicAPPDemo;
